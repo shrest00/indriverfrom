@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ideal Car - Car Finders Inc</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="header">
+    <img src="images/caricon.png" alt="logo" class="logo">
+    <h1>Ideal Car</h1>
+</header>
+
+<form method="get" action="thank_you.html">
+    <div>
+        <p>Please fill out this form for the registration.</p>
+    </div>
+    
+    <fieldset>
+        <legend>Your Information</legend>
+        <!-- input tag of type text -->
+        <label for="customerName">Customer Name: </label>
+        <input
+            type="text"
+            id="customerName"
+            name="customerName"
+            placeholder="John Doe"
+            size="25"
+            required minlength="1"
+            maxlength="60"
+            pattern="[a-zA-Z]+([\s][a-zA-Z]+)*">
+        <br> <br>
+          <!-- input tag of type email -->
+        <label for="customerEmail">Customer Email: </label>
+        <input
+            type="email"
+            id="customerEmail"
+            name="customerEmail"
+            placeholder="abcdef@gmail.com"
+            size="25"
+            required minlength="1"
+            maxlength="60">
+        <br> <br>
+        <!--registration-->
+        <label for="license">License Number:</label>
+        <input type="text" id="license" name="license" placeholder="1234-56-7890" required minlength="1">
+    </fieldset>
+            <br>
+
+
+    <!-- MANUFACTURER -->
+    <fieldset>
+        <legend>Manufacturer</legend>
+
+        <label for="manufacturer">Choose a brand:</label>
+        <select id="manufacturer" name="manufacturer" required>
+            <option value="Select a Brand">-- Select Brand--</option>
+            <option value="toyota">Toyota</option>
+            <option value="ford">Ford</option>
+            <option value="bmw">BMW</option>
+            <option value="tesla">Tesla</option>
+        </select>
+    <br><br>
+    <!-- COLOR -->
+        <label for="colour">Pick a color: </label>
+        <input type="color" id="colour" name="colour">
+    <br><br>
+        <label for="year">Year: </label>
+        <select id="year" name="year" required>
+            <option value="Select a Year">-- Select Year --</option>
+            <option value="2026">2026</option>
+            <option value="2025">2025</option>
+            <option value="2024" >2024</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+        </select>
+    <br><br>
+        <label for="fuel"> Fuel Type:  </label>
+        <!-- EXTRA FIELD 1 -->
+        <input type="radio" id="gas" name="fuel" value="gas" required>
+        <label for="gas">Gasoline</label>
+
+        <input type="radio" id="electric" name="fuel" value="electric">
+        <label for="electric">Electric</label>
+    </fieldset>
+
+
+    <!-- EXTRA FIELD 2 -->
+    <fieldset>
+        <legend>Budget</legend>
+
+        <label for="budget">Max Budget ($):</label>
+        <input type="number" id="budget" name="budget">
+    </fieldset>
+
+  
+    <!-- DRIVE OPTIONS -->
+    <fieldset>
+        <legend>Drive Options</legend>
+
+        <input type="checkbox" id="awd" name="drive" value="AWD">
+        <label for="awd">All Wheel Drive</label><br>
+
+        <input type="checkbox" id="fwd" name="drive" value="FWD">
+        <label for="fwd">Front Wheel Drive</label><br>
+
+        <input type="checkbox" id="rwd" name="drive" value="RWD">
+        <label for="rwd">Rear Wheel Drive</label>
+    </fieldset>
+
+    <!-- COMMENTS -->
+    <fieldset>
+        <legend>Comments</legend>
+        <label for="comments"></label>
+        <textarea id="comments" name="comments" rows="8" cols="60"></textarea>
+    </fieldset>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+</body>
+</html>
